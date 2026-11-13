@@ -1,0 +1,18 @@
+const movesEl = document.querySelector("#moves");
+const boxWrappers = document.querySelectorAll(".wrapper");
+const box = document.querySelectorAll(".box");
+
+let moves = 0;
+let selectedCards = [];
+let matchedCards = [];
+
+
+box.forEach(box => {
+  box.addEventListener('click', (event) => {
+    console.log('Button clicked:', event.target);
+    box.classList.add("rotate")
+    moves++;
+    movesEl.textContent = moves;
+  });
+});
+

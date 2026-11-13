@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</body>
+    <title>Bugton'</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="screen" id="start-screen">
+            <h1>Bu<span class="blue-box">gto</span>n'</h1>
+            <button id="start">Start</button>
+        </div>
+
+        <div class="screen hide" id="category-screen">
+            <div class="header">
+                <div class="icon" id="go-back"> ◀ </div>
+                <div class="title">Categories</div>
+            </div>
+
+            <div class="category-footer" id="category-footer">
+
+            </div>
+            <p class="footer">Please choose a category</p>
+        </div>
+
+        <div class="screen hide" id="riddle-screen">
+            <div class="header">
+                <div class="icon" id="menu">☰</div>
+                <div class="title">Bugton'</div>
+                <div class="icon" id="exit">✖</div>
+            </div>
+
+            <div class="card" id="riddle-text"></div>
+
+            <input type="text" id="input-answer" placeholder="Your answer...">
+
+            <div class="buttons">
+                <button id="answer">Answer</button>
+                <button id="check">Check</button>
+            </div>
+
+            <div class="arrows">
+                <div class="icon" id="arrow-back">◀</div>
+                <div class="icon" id="arrow-next">▶</div>
+            </div>
+        </div>
+
+        <div class="screen hide" id="level-screen">
+    <div class="header">
+        <div class="icon" id="level-back">◀</div>
+        <div class="title">Select Level</div>
+        
+    </div>
+
+    <div class="level-grid" id="level-grid"></div>
+</div>
+
+        <div class="overlay hide" id="confirm-popup">
+            <div class="popup">
+                <p>Are you sure you want to reveal the answer?</p>
+                <div class="buttons">
+                    <button id="yes">Yes</button>
+                    <button id="no" class="blue">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay hide" id="result-popup">
+            <div class="popup">
+                <div class="trophy" id="result-icon">🏆</div>
+                <h2 id="result-title">Excellent!</h2>
+                <p id="result-text"></p>
+                <button id="next-popup" class="blue next">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+   
+</body>
+</html>

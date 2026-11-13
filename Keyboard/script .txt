@@ -1,0 +1,56 @@
+const scrambleWord = document.querySelector(".word-box");
+const hintEl = document.querySelector(".word");
+const refreshBtn = document.querySelector(".refresh");
+const checkBtn = document.querySelector(".check");
+const input = document.querySelector("input");
+
+console.log(hintEl);
+
+let word = {
+    1:"casaul",
+    2:"happy", 
+    3:"book", 
+    4:"run"
+};
+console.log(word);
+let hint = {
+    "casaul": "A place where we study",
+    "happy": "A feeling of joy",
+    "book": "A collection of pages",
+    "run": "To move swiftly on foot"
+};
+
+hintEl.textContent = hint[word]
+let wordArray = word.split("");
+
+refresh();
+
+refreshBtn.addEventListener("click",refresh);
+
+function refresh() {
+    scrambleWord.innerHTML ="";
+
+for (let i = wordArray.length - 1; i > 0; i--) {
+        const random = Math.floor(Math.random() * (i + 1));
+        [wordArray[i], wordArray[random]] = [wordArray[random], wordArray[i]];
+    }
+
+for(let i = 0; i < wordArray.length; i++){
+    scrambleWord.innerHTML += "<div class='letter-box'>" + wordArray[i].toUpperCase() + "</div>";
+}
+}
+
+checkBtn.addEventListener("click", check);
+
+function check() {
+    let inputValue = input.value;
+    let result = inputValue == word ? "You are correct!" : "Try again.";
+
+    console.log(result);
+}
+
+
+
+
+
+

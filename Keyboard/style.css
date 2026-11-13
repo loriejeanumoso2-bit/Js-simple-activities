@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8e6df;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 2px lightgrey solid;
+    flex-direction: column;
+    width: 700px;
+    height: 700px;
+    background-color: #000c18;
+    padding:20px;
+    perspective:1000px;
+    border-radius: 10px;
+}
+.header{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.word-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  
+}
+
+.letter-box{
+    font-size: 25px;
+    flex-direction: row;
+    width: 45px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #e7e1e1;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+}
+.word{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+input {
+    width: 400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    flex-direction: column;
+    margin-bottom: 10px;
+    /* background:transparent; */
+    
+}
+
+.check{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    flex-direction: column;
+    width: 50px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.refresh{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    flex-direction: column;
+    width: 55px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.keyboard-con button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    flex-direction: column;
+    width: 45px;
+    height: 50px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+#space{
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    flex-direction: column;
+    width:300px;
+
+}
+#delete{
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    flex-direction: column;
+    width:150px;
+
+}
